@@ -11,9 +11,12 @@ const LiveSection = async () => {
     return (
         <section>
             <h2>Live anywhere</h2>
-            {data.map(({ img, title }, idx) =>
-                <LiveSectionCard key={idx} img={img} title={title} />
-            )}
+            <div className="container flex justify-evenly">
+                {data.map(({ img, title }, idx) =>
+                    <LiveSectionCard key={idx} img={img} title={title} />
+                )}
+            </div>
+
         </section>
     )
 }
