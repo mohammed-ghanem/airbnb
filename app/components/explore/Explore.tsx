@@ -7,7 +7,6 @@ import ExploreCard from "./ExploreCard"
 
 const Explore = async () => {
     const data: ExploreData = await getExplore()
-    console.log(data)
     return (
         <section className="container mx-auto mt-8">
             <h1 className="font-bold ms-5">Explore Nearby</h1>
